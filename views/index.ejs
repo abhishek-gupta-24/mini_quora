@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL POSTS</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>QUORA</h1>
+    <div class="newPost"><a href="http://localhost:8080/posts/new">Create New Post</a></div>
+    <%for(post of posts){%>
+        <div class="post">
+            <h3 class="user">Username: @<%=post.username%></h3>
+            <h2>Content</h2>
+            <p class="content"><%=post.content%></p>
+            <a href="http://localhost:8080/posts/<%=post.id%>"><button>See post</button></a>
+            <a href="http://localhost:8080/posts/<%=post.id%>/update"><button>Edit post</button></a>
+            <br>
+            <form   method="post" action="/posts/<%=post.id%>?_method=DELETE">
+                <button>Delete post</button>
+            </form>
+            
+        </div>
+    <%}%>
+</body>
+</html>

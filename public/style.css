@@ -1,0 +1,40 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: bisque;
+}
+h1{
+    text-align: center;
+    color:maroon;
+}
+.post{
+    width:30%;
+    background-color: bisque;
+    border:2px solid  black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+    margin:auto;
+    margin-bottom:8px;
+    text-align: center;
+
+}
+.post button{
+    height:20px;
+    width:100px;
+    background-color: maroon;
+    color:white;
+    border-radius: 5px;
+    margin-bottom: 3px;
+    font-size: 15px;
+}
+.newPost{
+   text-align: center;
+   margin:4px;
+}
+.newPost a{
+    text-decoration: none;
+    font-size: 30px;
+
+}
